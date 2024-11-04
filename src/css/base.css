@@ -1,0 +1,91 @@
+/* Fonts */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v40-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v40-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/raleway-v34-latin-700.woff2') format('woff2');
+}
+
+/* Variables */
+
+:root {
+    --font-family: "Open Sans", sans-serif;
+    --second-family: "Raleway", sans-serif;
+
+    --additional-font-color: #9da4bd;
+    --accent-font-color: #ff6c00;
+    --dark-font-color: #303030;
+    --light-font-color: #fff;
+    --text-font-color: #555;
+
+    --hover-focus-color: #ff6c00;
+
+    --button-border-color: #ff6c00;
+}
+
+/* General */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: var(--dark-font-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 810px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:1280px) {
+    .container {
+        max-width: 1280;
+        padding: 0 55px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

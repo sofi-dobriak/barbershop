@@ -1,0 +1,121 @@
+.hero-section {
+    position: relative;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-slider-container::after {
+    position: absolute;
+    content: '';
+    background-color: rgba(25, 28, 38, 0.2);
+    top: 0;
+    right: 0;
+    width: 616px;
+    height: 688px;
+    z-index: -1;
+}
+
+.hero-social-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transform: rotate(-90deg);
+    position: relative;
+}
+
+.hero-social-item {
+    position: relative;
+    bottom: 290px;
+    left: -140px;
+}
+
+.hero-social-list::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 60px;
+    background-color: #303030;
+    bottom: 267px;
+    left: -210px;
+    transform: rotate(90deg);
+}
+
+.hero-social-link {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--dark-font-color);
+
+}
+
+.hero-text-container {
+    max-width: 370px;
+    margin-bottom: 180px;
+    margin-left: 300px;
+    padding-top: 272px;
+}
+
+.hero-social-link:hover,
+.hero-social-link:focus {
+    color: var(--hover-focus-color);
+}
+
+.hero-text {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
+    padding-left: 80px;
+    position: relative;
+}
+
+.hero-text::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 60px;
+    left: 32px;
+    top: -23px;
+    background-color: rgba(157, 164, 189, 0.6);
+    transform: rotate(-90deg);
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    color: var(--light-font-color);
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.66667;
+    color: var(--additional-font-color);
+}
+
+.hero-slider-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 26px;
+}
+
+.hero-slider-item {}
+
+.hero-slider-link {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-align: right;
+    color: var(--light-font-color);
+}
