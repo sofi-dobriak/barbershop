@@ -1,10 +1,22 @@
-<div class="barbers-section">
+<div class="barbers-section" id="barbers">
     <div class="container">
         <p class="barbers-label">for true enjoyers of the atmosphere</p>
         <h2 class="barbers-title">Our barbers</h2>
         <ul class="barbers-list">
             <li class="barbers-item">
-                <img class="barbers-img" src="./img/tablet/barber-john-img.jpg" alt="John Smith">
+                <picture>
+                    <source srcset="./img/desktop/barber-john-img.webp 1x, ./img/desktop/barber-john-img@2x.webp 2x"
+                        media="(min-width: 1280px)" type="image/webp">
+                    <source srcset="./img/desktop/barber-john-img.jpg 1x, ./img/desktop/barber-john-img@2x.jpg 2x"
+                        media="(min-width: 1280px)" type="image/jpg">
+
+                    <source srcset="./img/tablet/barber-john-img.webp 1x, ./img/tablet/barber-john-img@2x.webp 2x"
+                        media="(max-width: 1279px)" type="image/webp">
+                    <source srcset="./img/tablet/barber-john-img.jpg 1x, ./img/tablet/barber-john-img@2x.jpg 2x"
+                        media="(max-width: 1279px)" type="image/jpg">
+
+                    <img class="barbers-img" src="./img/tablet/barber-john-img.jpg" alt="John Smith">
+                </picture>
                 <h3 class="barbers-name">John Smith</h3>
                 <p class="barbers-description">Extreme Barber</p>
                 <ul class="social-list">
@@ -39,7 +51,20 @@
                 </ul>
             </li>
             <li class="barbers-item">
-                <img class="barbers-img" src="./img/tablet/barber-michele-img.jpg" alt="Michele Doe">
+                <picture>
+                    <source
+                        srcset="./img/desktop/barber-michele-img.webp 1x, ./img/desktop/barber-michele-img@2x.webp 2x"
+                        media="(min-width: 1280px)" type="image/webp">
+                    <source srcset="./img/desktop/barber-michele-img.jpg 1x, ./img/desktop/barber-michele-img@2x.jpg 2x"
+                        media="(min-width: 1280px)" type="image/jpg">
+
+                    <source srcset="./img/tablet/barber-michele-img.webp 1x, ./img/tablet/barber-michele-img@2x.webp 2x"
+                        media="(max-width: 1279px)" type="image/webp">
+                    <source srcset="./img/tablet/barber-michele-img.jpg 1x, ./img/tablet/barber-michele-img@2x.jpg 2x"
+                        media="(max-width: 1279px)" type="image/jpg">
+
+                    <img class="barbers-img" src="./img/tablet/barber-michele-img.jpg" alt="Michele Doe">
+                </picture>
                 <h3 class="barbers-name">Michele Doe</h3>
                 <p class="barbers-description">Extreme Barber</p>
                 <ul class="social-list">
@@ -74,7 +99,19 @@
                 </ul>
             </li>
             <li class="barbers-item">
-                <img class="barbers-img" src="./img/tablet/barber-alan-img.jpg" alt="Alan Black">
+                <picture>
+                    <source srcset="./img/desktop/barber-alan-img.webp 1x, ./img/desktop/barber-alan-img@2x.webp 2x"
+                        media="(min-width: 1280px)" type="image/webp">
+                    <source srcset="./img/desktop/barber-alan-img.jpg 1x, ./img/desktop/barber-alan-img@2x.jpg 2x"
+                        media="(min-width: 1280px)" type="image/jpg">
+
+                    <source srcset="./img/tablet/barber-alan-img.webp 1x, ./img/tablet/barber-alan-img@2x.webp 2x"
+                        media="(max-width: 1279px)" type="image/webp">
+                    <source srcset="./img/tablet/barber-alan-img.jpg 1x, ./img/tablet/barber-alan-img@2x.jpg 2x"
+                        media="(max-width: 1279px)" type="image/jpg">
+
+                    <img class="barbers-img" src="./img/tablet/barber-alan-img.jpg" alt="Alan Black">
+                </picture>
                 <h3 class="barbers-name">Alan Black</h3>
                 <p class="barbers-description">Extreme Barber</p>
                 <ul class="social-list">

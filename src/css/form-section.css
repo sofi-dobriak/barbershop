@@ -29,6 +29,7 @@
 }
 
 .form-input {
+    outline: none;
     border: none;
     background-color: transparent;
     border-bottom: 1px solid var(--light-font-color);
@@ -78,10 +79,25 @@
 }
 
 
-.button {
+.form-button {
     display: block;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--light-font-color);
+
+    border: 1px solid var(--button-border-color);
+    border-radius: 25px;
+    min-width: 160px;
+    height: 40px;
+
+    background-color: transparent;
+    transition: background-color .3s ease;
 }
 
-.form-button {
-    color: var(--light-font-color)
+.form-button:hover,
+.form-button:focus {
+    background-color: var(--hover-focus-color);
 }

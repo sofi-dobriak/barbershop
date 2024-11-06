@@ -103,9 +103,10 @@ body {
     border: 1px solid var(--button-border-color);
     border-radius: 25px;
     background-color: transparent;
-    min-width: 160px;
+    max-width: 162px;
     height: 40px;
     transition: background-color .3s ease;
+    padding: 12px 20px;
 }
 
 .button:hover,

@@ -6,6 +6,12 @@
     background-size: cover;
 }
 
+@media (min-resolution: 192dpi) {
+    .service-section {
+        background-image: url(../img/tablet/service-bg-img@2x.png);
+    }
+}
+
 .service-label {
     font-weight: 600;
     font-size: 11px;

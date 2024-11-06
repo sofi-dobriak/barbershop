@@ -2,10 +2,10 @@
     <div class="container">
         <ul class="hero-social-list">
             <li class="hero-social-item">
-                <a class="hero-social-link" href="#">Instagram</a>
+                <a class="hero-social-link" href="https://www.instagram.com/" target="_blank">Instagram</a>
             </li>
             <li class="hero-social-item">
-                <a class="hero-social-link" href="#">YouTube</a>
+                <a class="hero-social-link" href="https://www.youtube.com/" target="_blank">YouTube</a>
             </li>
         </ul>
 
@@ -26,7 +26,20 @@
         </ul>
 
         <div class="hero-slider-container">
-            <img class="hero-img" src="./img/tablet/hero-bg-slider-1.png" alt="A barber">
+            <picture>
+                <source srcset="./img/desktop/hero-bg-slider-1.webp 1x, ./img/desktop/hero-bg-slider-1@2x.webp 2x"
+                    media="(min-width: 1280px)" type="image/webp">
+                <source srcset="./img/desktop/hero-bg-slider-1.png 1x, ./img/desktop/hero-bg-slider-1@2x.png 2x"
+                    media="(min-width: 1280px)" type="image/png">
+
+                <source srcset="./img/tablet/hero-bg-slider-1.webp 1x, ./img/tablet/hero-bg-slider-1@2x.webp 2x"
+                    media="(max-width: 1279px)" type="image/webp">
+                <source srcset="./img/tablet/hero-bg-slider-1.png 1x, ./img/tablet/hero-bg-slider-1@2x.png 2x"
+                    media="(max-width: 1279px)" type="image/png">
+
+                <img class="hero-img" src="./img/tablet/hero-bg-slider-1.png" alt="A barber">
+            </picture>
+
         </div>
     </div>
 </div>
