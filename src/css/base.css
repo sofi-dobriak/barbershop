@@ -47,6 +47,11 @@
     --hover-focus-color: #ff6c00;
 
     --button-border-color: #ff6c00;
+
+    --stat-bg-color: #f7f7f7;
+    --section-bg-color: #f7f7f7;
+
+    --form-bg-section: #191c26;
 }
 
 /* General */
