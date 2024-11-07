@@ -64,3 +64,26 @@
 .about-button:focus {
     color: var(--light-font-color);
 }
+
+@media screen and (min-width: 1280px) {
+    .about-container {
+        gap: 64px;
+    }
+
+    .about-img-list {
+        flex-direction: row;
+    }
+
+    .about-title {
+        font-size: 42px;
+        max-width: 500px;
+    }
+
+    .about-text {
+        max-width: 500px;
+    }
+
+    .about-description {
+        max-width: 500px;
+    }
+}

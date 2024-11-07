@@ -34,4 +34,13 @@
     flex-basis: calc((100% - 30px) / 2);
 }
 
-.portfolio-img {}
+@media screen and (min-width: 1280px) {
+    .portfolio-section {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    .portfolio-item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+}

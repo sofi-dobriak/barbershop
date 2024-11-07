@@ -1,24 +1,65 @@
-<div class="form-section" id="form">
-    <div class="container">
-        <h2 class="form-title">Online-booking</h2>
-        <form class="form">
-            <div class="input-container">
-                <div class="input-label-container">
-                    <label class="form-label" for="user-name">name*</label>
-                    <input class="form-input" type="text" name="user-name" id="user-name" required>
+<div class="form-contacts-container">
+    <div class="form-section" id="form">
+        <div class="container">
+            <h2 class="form-title">Online-booking</h2>
+            <form class="form">
+                <div class="input-container">
+                    <div class="input-label-container">
+                        <label class="form-label" for="user-name">name*</label>
+                        <input class="form-input" type="text" name="user-name" id="user-name" required>
+                    </div>
+
+                    <div class="input-label-container">
+                        <label class="form-label" for="user-tel">phone*</label>
+                        <input class="form-input" type="tel" name="user-tel" id="user-tel" required>
+                    </div>
                 </div>
 
-                <div class="input-label-container">
-                    <label class="form-label" for="user-tel">phone*</label>
-                    <input class="form-input" type="tel" name="user-tel" id="user-tel" required>
+                <div class="textarea-container">
+                    <label class="form-label" for="user-comment">message</label>
+                    <textarea class="form-textarea" name="user-comment" id="user-comment"></textarea>
+                </div>
+                <button class="form-button" type="submit">send</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="desk-contact-section" id="contacts">
+        <div class="container">
+            <h2 class="desk-contact-title">Contacts</h2>
+            <div class="desk-contact-container">
+                <ul class="desk-contact-list">
+                    <li class="desk-contact-item">
+                        <a class="desk-contact-link" href="https://maps.app.goo.gl/DXmT2aoQ6hm3Eamw9" target="_blank">
+                            <svg class="contact-icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-location"></use>
+                            </svg>
+                            st. Vasilkovaya, 7A Kiev, 08132
+                        </a>
+                    </li>
+                    <li class="desk-contact-item">
+                        <a class="desk-contact-link" href="tel:+380441111111">
+                            <svg class="desk-contact-icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-phone"></use>
+                            </svg>
+                            +38 044 111 11 11
+                        </a>
+                    </li>
+                    <li class="desk-contact-item">
+                        <a class="desk-contact-link" href="mailto:barbershop@email.com">
+                            <svg class="contact-icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-mail"></use>
+                            </svg>
+                            barbershop@email.com
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="desk-working-hours-container">
+                    <p class="desk-working-hours-title">working hours</p>
+                    <p class="desk-working-hours-text">Every day from 9:00 to 22:00</p>
                 </div>
             </div>
-
-            <div class="textarea-container">
-                <label class="form-label" for="user-comment">message</label>
-                <textarea class="form-textarea" name="user-comment" id="user-comment"></textarea>
-            </div>
-            <button class="form-button" type="submit">send</button>
-        </form>
+        </div>
     </div>
 </div>

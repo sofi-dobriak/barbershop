@@ -50,6 +50,10 @@
     margin-bottom: 44px;
 }
 
+.service-list-desktop-container {
+    display: none;
+}
+
 .service-item {
     line-height: 1.67;
     color: var(--additional-font-color);
@@ -86,4 +90,78 @@
     color: var(--light-font-color);
     display: block;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+    .service-section {
+        padding-top: 130px;
+        padding-bottom: 130px;
+        background-image: url(../img/desktop/service-bg-img.png);
+    }
+
+    @media (min-resolution: 192dpi) {
+        .service-section {
+            background-image: url(../img/desktop/service-bg-img@2x.png);
+        }
+    }
+
+
+    .service-price-container {
+        display: none;
+    }
+
+    .service-list-desktop-container {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .service-list-left {
+        padding: 30px 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 586px;
+        height: 240px;
+        background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    .service-list-right {
+        padding: 30px 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 586px;
+        height: 240px;
+        background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
+
+    .service-item-desktop {
+        line-height: 1.67;
+        color: var(--additional-font-color);
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .service-item-desktop:last-child {
+        margin-bottom: 0;
+    }
+
+    .service-item-desktop::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 314px;
+        left: 308px;
+        bottom: -148px;
+        background-color: rgba(157, 164, 189, 0.12);
+        transform: rotate(-90deg);
+    }
+
+    .service-price-desktop {
+        line-height: 1.66667;
+        color: var(--additional-font-color);
+        margin-bottom: 20px;
+    }
+
+    .service-price-desktop:last-child {
+        margin-bottom: 0;
+    }
 }

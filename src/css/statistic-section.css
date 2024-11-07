@@ -92,3 +92,16 @@
     font-size: 11px;
     text-align: center;
 }
+
+@media screen and (min-width: 1280px) {
+    .statistic-section {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    .stat-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 130px;
+    }
+}

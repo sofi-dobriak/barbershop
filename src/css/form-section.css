@@ -71,8 +71,6 @@
     margin-bottom: 44px;
 }
 
-
-
 .form-textarea:hover,
 .form-textarea:focus {
     outline: none;
@@ -100,4 +98,131 @@
 .form-button:hover,
 .form-button:focus {
     background-color: var(--hover-focus-color);
+}
+
+.form-contacts-container {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .form-contacts-container {
+        background-color: var(--form-bg-section);
+    }
+
+    .form-contacts-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-section {
+        max-width: 655px;
+        padding-top: 130px;
+        padding-bottom: 192px;
+    }
+
+    .form-input {
+        width: 270px;
+    }
+
+    .form-textarea {
+        width: 560px;
+    }
+
+    .desk-contact-section {
+        padding-top: 130px;
+        padding-bottom: 130px;
+        min-width: 625px;
+        background-image: url(../img/desktop/contact-bg-img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: 192dpi) {
+        .desk-contact-section {
+            background-image: url(../img/desktop/contact-bg-img@2x.png);
+        }
+    }
+
+    .desk-contact-title {
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: 0.05em;
+        color: var(--light-font-color);
+        margin-bottom: 40px;
+    }
+
+    .desk-contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desk-contact-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .desk-contact-list {
+        margin-bottom: 70px;
+    }
+
+    .desk-contact-link {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: var(--additional-font-color);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition: color .3s ease;
+    }
+
+    .desk-contact-link:hover,
+    .desk-contact-link:focus {
+        color: var(--hover-focus-color);
+    }
+
+    .desk-contact-icon {
+        fill: transparent;
+        stroke-width: 1px;
+        stroke: var(--additional-font-color);
+        transition: stroke .3s ease;
+    }
+
+    .desk-contact-link:hover .desk-contact-icon,
+    .desk-contact-link:focus .desk-contact-icon {
+        stroke: var(--hover-focus-color);
+    }
+
+    .desk-working-hours-title {
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--light-font-color);
+        margin-bottom: 20px;
+        padding-left: 80px;
+        position: relative;
+    }
+
+    .desk-working-hours-title::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 60px;
+        background-color: rgba(157, 164, 189, 0.4);
+        transform: rotate(-90deg);
+        top: -22px;
+        left: 30px;
+    }
+
+    .desk-working-hours-text {
+        line-height: 1.67;
+        color: var(--additional-font-color);
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .desk-contact-section {
+        min-width: 725px;
+    }
 }

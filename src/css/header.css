@@ -63,3 +63,31 @@
 .address-tel:focus {
     color: var(--hover-focus-color);
 }
+
+@media screen and (min-width: 1280px) {
+    .header {
+        padding-top: 40px;
+        right: 64px;
+    }
+
+    .header-nav {
+        gap: 116px;
+    }
+
+    .header-list {
+        gap: 30px;
+        margin-right: 274px;
+    }
+
+    .order-container {
+        flex-direction: row-reverse;
+        gap: 46px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .header-nav {
+        gap: 230px;
+    }
+}

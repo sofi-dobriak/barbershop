@@ -77,7 +77,12 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
 
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-icon {
@@ -87,4 +92,26 @@
 .social-item:hover .social-icon,
 .social-item:focus .social-icon {
     fill: var(--accent-font-color);
+}
+
+@media screen and (min-width: 1280px) {
+    .barbers-section {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    .barbers-section>.container {
+        max-width: 1280px;
+    }
+
+    .barbers-list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .barbers-item {
+        margin-bottom: 0;
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }
