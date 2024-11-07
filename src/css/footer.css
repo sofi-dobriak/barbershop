@@ -45,3 +45,11 @@
 .footer-link:focus {
     color: var(--hover-focus-color);
 }
+
+@media screen and (min-width: 1280px) {
+    .footer-container {
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
