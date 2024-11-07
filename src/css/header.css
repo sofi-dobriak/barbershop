@@ -102,4 +102,8 @@
     .header-nav {
         gap: 230px;
     }
+
+    .order-container {
+        margin-right: 12px;
+    }
 }

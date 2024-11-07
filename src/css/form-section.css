@@ -100,7 +100,7 @@
     background-color: var(--hover-focus-color);
 }
 
-.form-contacts-container {
+.desk-contact-section {
     display: none;
 }
 
@@ -129,6 +129,7 @@
     }
 
     .desk-contact-section {
+        display: flex;
         padding-top: 130px;
         padding-bottom: 130px;
         min-width: 625px;
