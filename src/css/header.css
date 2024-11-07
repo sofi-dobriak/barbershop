@@ -16,6 +16,10 @@
     gap: 64px;
 }
 
+.desk-header-item {
+    display: none;
+}
+
 .header-list {
     display: flex;
     align-items: center;
@@ -83,6 +87,14 @@
         flex-direction: row-reverse;
         gap: 46px;
         margin-top: 0;
+    }
+
+    .tablet-header-item {
+        display: none;
+    }
+
+    .desk-header-item {
+        display: block;
     }
 }
 
