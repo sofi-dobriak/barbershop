@@ -1,10 +1,10 @@
 const swiper = new Swiper('.swiper', {
-  loop: true, // Зациклення слайдів
+  loop: true,
   autoplay: {
-    delay: 3000, // Затримка між зміною слайдів у мілісекундах
-    disableOnInteraction: false, // Продовжити прокрутку навіть після взаємодії
+    delay: 3000,
+    disableOnInteraction: false,
   },
-  effect: 'fade', // Плавний перехід між слайдами
+  effect: 'slide',
   fadeEffect: {
     crossFade: true,
   },

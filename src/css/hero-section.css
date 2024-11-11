@@ -133,13 +133,13 @@
     }
 
     .hero-img {
-        width: 1070px;
+        max-width: 1070px;
         height: 680px;
         margin-right: 56px;
     }
 
     .hero-slider-container::after {
-        width: 1070px;
+        max-width: 1070px;
         height: 680px;
         margin-right: 56px;
     }
@@ -161,7 +161,7 @@
 
 @media screen and (min-width: 1500px) {
     .hero-slider-container {
-        width: 1170px;
+        min-width: 1170px;
     }
 
     .hero-slider-container::after {
